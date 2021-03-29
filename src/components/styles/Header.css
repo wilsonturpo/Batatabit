@@ -1,0 +1,75 @@
+
+header {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 320px; /* ancho mínimo para móviles */
+    height: 350px;
+    width: 100%;
+    text-align: center;
+    background: var(--linear-gradient);
+  }
+  
+  header img {
+    width: 150px;
+    height: 24px;
+    margin-top: 40px;
+    align-self: center; /* para centrar un solo elemento hijo de un flex container */
+    margin-bottom: 36px;
+  }
+  
+  .header__title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    align-self: center;
+    height: 138px;
+    /* border: 1px solid black; */
+  }
+  
+  .header__title h1 {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    color: var(--just-white);
+    margin-bottom: 20px;
+  }
+  .header__title p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: var(--soft-orange);
+  /*   margin-bottom: 35px; */
+  }
+  
+  .header__button {
+    display: inline-block;
+    position: absolute;
+    height: 48px; /* definidos en figma */
+    width: 229px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;    /* importante <a> posicionado absolute deja de ser clickeable parcialmente en este caso */
+    padding: 15px;
+    background-color: var(--off-white);
+    /* letras */
+    text-decoration: none;
+    color: var(--warm-black);
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 4px;
+    box-shadow: 0 2px 9px var(--warm-blackplus1) ;
+    /* box-shadow: -1px 1px 4px var(--warm-blackplus1) ; */
+  }
+  .header__button span {
+    background-image: url('../../assets/icons/black-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 17px;
+    height: 8px;
+    display: inline-block;
+    margin-left: 5px;
+  }

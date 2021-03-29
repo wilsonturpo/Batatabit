@@ -1,0 +1,102 @@
+/* -------main------- */
+
+main {
+    width: 100%;
+    min-width: 320px;
+    height: auto; /* el contenido definira su altura */
+    background-color: #e5e5e5;
+  }
+  
+  /* -------main information and cards------- */
+  
+  .main-product-detail {
+    width: 100%;
+    min-width: 320px; /* !important para delimitar su creciemiento */
+    height: auto;
+    padding: 64px 16px 40px;  /* valores tomados defigma para las tajetas */
+    background-color: var(--warm-black);
+    /* margin-bottom: 32px; */
+  }
+
+  .main-product-detail .product-detail__heading {
+    width: 90%;
+    min-width: 290px; /* bueno para delimitar el minimo */
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  
+  .product-detail__heading h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--just-white);
+    margin-bottom: 24px;
+  }
+  
+  .product-detail__heading p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+  }
+
+
+/* Seccion de planes */
+
+.main-plans {
+  width: 100%;
+  min-width: 320px;
+  background-color: #E5E5E5;
+  padding-bottom: 50px; /*hace espacio contra el footer*/
+}
+
+.main-plans__heading {
+  padding-top: 64px;
+  width: 90%;
+  height: auto;
+  min-width: 290px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.main-plans__heading h2 {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  color: var(--warm-black);
+  margin-bottom: 24px;
+}
+
+.main-plans__heading p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: #757575;
+}
+
+/* ----slider de precios---- */
+
+.main-plans .main-plans__slider {
+  display: flex;
+  overflow-x: scroll;
+  height: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+
+/*Desktop*/
+
+.main-plans__heading p,
+.main-exchange-container__title p {
+  font-size: 1.6rem;
+}
+
+/*Tablet*/
+/* justify card prices */
+.main-plans .main-plans__slider {
+  justify-content:space-between;
+}

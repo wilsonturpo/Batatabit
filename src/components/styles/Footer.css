@@ -1,0 +1,48 @@
+
+/* -------foooter----- */
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orage);
+  }
+  
+  footer section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+  
+  footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+  }
+  
+  .left li {
+    margin: 10px 0;
+  }
+  
+  .left a {
+    text-decoration: none;
+    color: var(--just-white);
+  }
+  
+  footer .right img {
+    width: 90px;
+    height: 70px;
+  }
+
+  /*Desktop*/
+  footer .right img {
+    width: 125px;
+    height: 90px;
+  }
+  
+footer .left ul,
+.main-exchange-container__title p {
+font-size: 1.6rem;
+}

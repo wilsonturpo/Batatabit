@@ -1,0 +1,25 @@
+.card-info__ca {
+    width: 151px;
+    height: 48px;
+    border: 2px solid #F7931A;
+    background-color: var(--off-white);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.8rem;
+    font-weight: 700;
+  }
+  
+.card-info__ca span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url('../../assets/icons/arrow-right-orange.svg') center/cover no-repeat;
+    vertical-align: text-bottom;
+  }
+
+  /* limitado */
+.card-info__ca.card-info__ca--limited {
+    color: var(--just-white);
+    background-color: #282623;
+  } 

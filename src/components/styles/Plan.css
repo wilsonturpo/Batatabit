@@ -1,0 +1,120 @@
+/* ----cards----- */
+
+.main-plans__card {
+  width: 50%;
+  min-width: 190px;
+  max-width: 250px; /*la tarjeta queda mejor*/
+  min-height: 250px;
+  margin: 20px 4px 20px;
+  position: relative;
+  scroll-snap-align: center;  /*regla para centrar las tarjetas y que no se queden cortadas*/
+  padding: 30px 15px 20px;
+  text-align: center;
+  background-color: var(--just-white);
+  box-shadow: 0 4px 8px rgba(89, 73, 30, .16);
+  border-radius: 8px;
+}
+
+.main-plans__card .recommened {
+  width: 110px;
+  height: 30px;
+  position: absolute;
+  top: -15px;
+  left: calc(50% - 55px);
+  padding: 8px;
+  line-height: 1.4rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  background-color: var(--bitcoin-orage);
+  color: var(--just-white);
+  font-family: 'Inter', sans-serif;
+  border-radius: 8px;
+}
+
+.card-info {
+  width: 100%;
+  height: 100%;
+}
+
+.card-info .card-info__title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.card-info .card-info__price {
+  margin-bottom: 16px;
+  font-size: 5.2rem;
+  line-height: 6.2rem;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  display: inline-block; /*para posicionar mejor el $*/
+}
+
+.card-info .card-info__price span {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 500;
+  /* vertical-align: text-top; */
+  position: absolute;
+  top: 15px;
+  left: -11px;
+}
+
+.card-info .card-info__savings {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  color: #757575;
+  margin-bottom: 16px;
+}
+
+.card-info .card-info__ca {
+  width: 151px;
+  height: 48px;
+  border: 2px solid #F7931A;
+  background-color: var(--off-white);
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.8rem;
+  font-weight: 700;
+}
+
+.card-info .card-info__ca span {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url('../../assets/icons/arrow-right-orange.svg') center/cover no-repeat;
+  vertical-align: text-bottom;
+}
+
+.recommened.recommened--limited {
+  background-color: var(--gray);
+  color: var(--warm-black);
+}
+
+.recommened.recommened--basic {
+  background-color: var(--secondary-blue);
+}
+
+/* limitado */
+.card-info__ca.card-info__ca--limited {
+  color: var(--just-white);
+  background-color: #282623;
+} 
+
+.main-plans__card.main-plans__card--limited {
+  background-color: var(--warm-black);
+  color: var(--off-white);
+}
+
+/*Desktop*/
+
+.main-plans__heading p,
+.main-exchange-container__title p {
+  font-size: 1.6rem;
+}
