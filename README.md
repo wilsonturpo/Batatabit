@@ -3,6 +3,7 @@
 # Demostración
 
 <img src="./src/assets/img/batabit01.png" alt="logo"/>
+<img src="./src/assets/img/batabit02.png" alt="logo"/>
 
 Proyecto realizado con: [Create React App](https://github.com/facebook/create-react-app).
 
